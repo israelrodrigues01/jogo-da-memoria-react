@@ -1,4 +1,5 @@
 import '../assets/styles/style.sass'
+import Modal from './Components/Modal'
 
 function Content(){
     return (
@@ -18,7 +19,8 @@ function Content(){
                         </select>
                     </div>
                 </div>
-            </div>   
+            </div>
+            <Modal />  
         </>
     )
 }

@@ -7,6 +7,8 @@
     flex-wrap: wrap
     gap: 30px
     .card
+        @include mixins.keyframe
+        animation: vizualizar 3s ease-in-out
         position: relative
         width: 160px
         height: 160px
@@ -26,6 +28,7 @@
             backface-visibility: hidden
             &_front
                 transform: rotateY(180deg)
+                border-radius: 10px
             &_back
                 @include mixins.texto(variaveis.$font-primaria, variaveis.$size-title, variaveis.$font-regular, variaveis.$yellow)
                 text-shadow: 0px 0px 20px #FF5B00
@@ -33,6 +36,7 @@
                 place-items: center
                 border: 3px solid variaveis.$yellow
                 box-shadow: 0px 0px 8px #B63C00
+                border-radius: 10px
 
        
                   
